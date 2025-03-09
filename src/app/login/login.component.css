@@ -11,22 +11,32 @@
 
 	
 	.warpper{
-		background: #f0f2f5;
+		
 		display: flex;
 		justify-content: center; 
 		align-items: center;      
 		min-height: 100vh; 
+		content: '';
+		background-image: url('/assets/img/BG.png');
+		background-size: cover;
+		background-position: center;
+
+    
+	
+	
 		
 		     
 	}
 
 	.login-container {
+		
 		background: white;
 		padding: 2rem 3rem;
-		border-radius: 15px;
-		box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-		width: 95%; /* Responsive sur petits écrans */
-		max-width: 450px; /* Largeur maximale */
+		border-radius: 10px;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+		width: 100%;
+		max-width: 500px;
+	
 	}
 
 h1 {

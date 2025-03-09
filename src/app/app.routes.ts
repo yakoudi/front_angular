@@ -19,7 +19,7 @@ export const routes: Routes = [
         component:ServiceComponent
     },
     {
-        path:'contact ',
+        path:'contact',
         component:ContactComponent
     },
     {
