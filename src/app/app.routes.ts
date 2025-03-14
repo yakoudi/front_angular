@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
 import { TarifComponent } from './tarif/tarif.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { DashboradComponent } from './dashborad/dashborad.component';
+import { DashboardclientComponent } from './dashboardclient/dashboardclient.component';
+import { ListeappointmentComponent } from './listeappointment/listeappointment.component';
+import { AddappComponent } from './addapp/addapp.component';
+
 
 export const routes: Routes = [
     { path: 'login', component: LoginComponent },
@@ -15,6 +20,7 @@ export const routes: Routes = [
         path:'about',
         component:AboutComponent
     },
+   
     {   path:'service',
         component:ServiceComponent
     },
@@ -29,5 +35,19 @@ export const routes: Routes = [
     {
         path:'register',
        component:RegisterComponent
-    }
+    },
+    {
+        path:'dashboard',
+        component:DashboradComponent
+      
+    },
+    {
+        path:'dashboardpatient',
+        component:DashboardclientComponent
+      
+    },
+    { path: 'listeapp', 
+      component: ListeappointmentComponent
+     },
+     { path: 'add-appointment', component: AddappComponent }
 ];

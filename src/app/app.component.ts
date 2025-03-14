@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./footer/footer.component";
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from "./header/header.component";
@@ -19,4 +19,15 @@ import { RegisterComponent } from './register/register.component';
 })
 export class AppComponent {
   title = 'frontangprojet';
+  showNavbarAndFooter: boolean = true;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.showNavbarAndFooter = !event.url.includes('/dashboard')&& !event.url.includes('/add-appointment')&& !event.url.includes('/listeapp');
+      }
+    });
+  }
+
+
 }
