@@ -22,6 +22,7 @@ import { AdddossiermedicaleComponent } from './adddossiermedicale/adddossiermedi
 import { ListedossiermedicaleComponent } from './listedossiermedicale/listedossiermedicale.component';
 import { AnalyseComponent } from './analyse/analyse.component';
 import { ListeanalyseComponent } from './listeanalyse/listeanalyse.component';
+import { ListanalysepatientComponent } from './listanalysepatient/listanalysepatient.component';
 
 
 export const routes: Routes = [
@@ -66,12 +67,13 @@ export const routes: Routes = [
     { path: 'addappoiment', component: AddappoimentComponent},
     {path :'visit' , component:VisitComponent},
     {path :'addvisit' , component:AddvisitComponent},
-    {path : 'transactionn' , component : TransactionComponent},
+    {path : 'transaction' , component : TransactionComponent},
     { path: 'appointmentslist', component: AppointmentListComponent },
     {path:'adddossier', component :AdddossiermedicaleComponent},
     {path:'listedossier', component: ListedossiermedicaleComponent},
     {path:'analyse', component: AnalyseComponent},
      {path:'analyselist', component: ListeanalyseComponent},
+     {path:'listanalyses', component:ListanalysepatientComponent}
    
 
 ];
