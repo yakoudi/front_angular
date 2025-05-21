@@ -27,7 +27,9 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+                "public/assets/lib/owlcarousel/assets/owl.carousel.min.css",
+                 "public/assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
             ],
             "scripts": [
               "public/assets/js/script.js"

@@ -1,0 +1,124 @@
+ <!-- =============== Navigation ================ -->
+ <div class="container">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                       
+                    </span>
+                    <span class="title">Malek yakoudi</span>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+  
+            <li>
+                <a routerLink="/appointmentslist">
+                    <span class="icon">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </span>
+                    <span >Appointments</span>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+                    </span>
+                    <span class="title">Messages</span>
+                </a>
+            </li>
+  
+            <li>
+                <a routerLink="/profile">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="title">Profil</span>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="title">Settings</span>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </span>
+                    <span class="title">Password</span>
+                </a>
+            </li>
+  
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+  
+    <!-- ========================= Main ==================== -->
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+  
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+  
+            <div class="user">
+                <img src="assets/img/customer01.jpg" alt="">
+            </div>
+        </div>
+  
+       
+        
+<!-- src/app/components/appointment/appointment.component.html -->
+<div class="appointment-container">
+  <h2>Create Appointment</h2>
+  <form (ngSubmit)="createAppointment()">
+    <div>
+      <label>Patient ID:</label>
+      <input [(ngModel)]="newAppointment.patientId" name="patientId" type="number" required>
+    </div>
+    <div>
+      <label>Doctor ID:</label>
+      <input [(ngModel)]="newAppointment.doctorId" name="doctorId" type="number" required>
+    </div>
+    <div>
+      <label>Date:</label>
+      <input [(ngModel)]="newAppointment.date" name="date" type="date" required>
+    </div>
+    <div>
+      <label>Time:</label>
+      <input [(ngModel)]="newAppointment.time" name="time" type="time" required>
+    </div>
+    <button type="submit">Create Appointment</button>
+  </form>
+
+
+</div>

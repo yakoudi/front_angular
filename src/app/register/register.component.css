@@ -58,13 +58,8 @@ input {
     display: flex;
     gap: 20px;
 }
-.checkbox-group {
-    margin: 1.5rem 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
 
+  
 .submit-btn {
     background: #1a73e8;
     color: white;
@@ -90,3 +85,57 @@ input {
     color: #1a73e8;
     text-decoration: none;
 }
+/* Style du select */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none; /* Supprimer l'apparence par défaut du select */
+    -webkit-appearance: none; /* Pour Safari et Chrome */
+    -moz-appearance: none; /* Pour Firefox */
+    color: #333;
+    box-sizing: border-box; /* Inclure padding et border dans la largeur totale */
+  }
+  
+  /* Ajouter un fond personnalisé à l'élément select */
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Style des options */
+  option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Ajout d'un effet de survol sur les options */
+  option:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Personnalisation du container pour un meilleur affichage */
+  select::-ms-expand {
+    display: none; /* Supprimer la flèche par défaut sur IE */
+  }
+  
+  /* Ajouter une flèche personnalisée */
+  select {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY29wZSIgdmlld0JveD0iMCAwIDIyIDIyIj4KPHBhdGggZD0iTTEwIDExLjMiLz4KPC9zdmc+Cg==');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+  }
+  .large-select {
+    width: 100%;         /* ou une taille fixe comme 300px */
+    height: 50px;        /* augmente la hauteur */
+    font-size: 18px;     /* augmente la taille du texte */
+    padding: 8px 70px;
+  }
+  

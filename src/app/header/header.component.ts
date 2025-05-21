@@ -9,9 +9,10 @@ import { TarifComponent } from '../tarif/tarif.component';
 import { LoginComponent } from '../login/login.component';
 import { Router } from '@angular/router';
 import { RegisterComponent } from '../register/register.component';
+import { DashboarddoctorComponent } from '../dashboarddoctor/dashboarddoctor.component';
 @Component({
   selector: 'app-header',
-  imports: [RouterOutlet,RouterLink, CommonModule, FooterComponent, HeaderComponent,RegisterComponent, AboutComponent, ServiceComponent, ContactComponent, TarifComponent , LoginComponent],
+  imports: [RouterOutlet,RouterLink, CommonModule, FooterComponent, HeaderComponent,RegisterComponent, AboutComponent, ServiceComponent, ContactComponent, TarifComponent ,DashboarddoctorComponent, LoginComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
