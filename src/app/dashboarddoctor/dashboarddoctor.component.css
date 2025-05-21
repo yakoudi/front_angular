@@ -361,7 +361,13 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+.bbtn-primary{
+  color: #f6fbff;
+  background-color: #2b1dc1;
+  padding: 6px 16px;
+  border-radius: 10px;
 
+}
 .recentCustomers {
   position: relative;
   display: grid;
@@ -405,6 +411,7 @@ body {
 .recentCustomers table tr:hover td h4 span {
   color: var(--white);
 }
+
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
